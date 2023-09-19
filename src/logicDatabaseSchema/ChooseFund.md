@@ -1,4 +1,4 @@
-# Flow Diagram:
+## Fund dashboard showcase:
 
 1. User can "View ISA Wallet Balance"
    Retrieve and display the user's ISA wallet balance from the database.

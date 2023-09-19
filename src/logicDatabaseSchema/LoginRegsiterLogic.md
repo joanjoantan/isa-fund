@@ -1,4 +1,4 @@
-# Login / Regsiter Logic:
+## Login and regsiter showcase:
 
 1. Start the registration process.
 

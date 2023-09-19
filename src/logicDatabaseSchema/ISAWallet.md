@@ -1,4 +1,4 @@
-# Add money to ISA wallet:
+## Add money to ISA wallet showcase:
 
 1. Start the process of adding money to the ISA account.
 
