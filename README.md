@@ -14,11 +14,14 @@ Submit the investment request.
 
 # 2. Future Enhancements (Not Covered in the Solution):
 
-Set up a database to store customer investment information. The table can include the following fields: Customer Name, Customer Address, Selected Fund, Investment Amount, Investment Date
+Set up a database to store customer investment information:
+The table can include the following fields - Customer Name, Customer Address, Selected Fund, Investment Amount, Investment Date
 
-Query Functionality: Add a query function that allows customers to view their investment information at any time. Customers can use their customer ID or other authentication information to perform queries.
+Query Functionality:
+Add a query function that allows customers to view their investment information at any time. Customers can use their customer ID or other authentication information to perform queries.
 
-Automatic Investment Strategies: Allow customers to set up automated periodic investments, not just one-time investments.
+Automatic Investment Strategies:
+Allow customers to set up automated periodic investments, not just one-time investments.
 
 # Getting Started with Create React App
 
@@ -28,7 +31,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -36,12 +39,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `yarn run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -51,7 +54,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `yarn run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
