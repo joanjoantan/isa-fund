@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-
-interface InvestmentAmountProps {
-  onConfirmAmount: (amount: number) => void;
-  previousInvestmentAmount: number;
-}
+import { InvestmentAmountProps } from "../common/types";
 
 const InvestmentAmount = ({
   onConfirmAmount,

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Grid } from "@mui/material";
+import { Investment } from "../common/types";
 
 import InvestmentForm from "../components/InvestmentForm";
 import InvestmentList from "../components/InvestmentList";
@@ -8,12 +9,6 @@ const InvestmentContext = React.createContext<{
   investments: Investment[];
   addInvestment: (investment: Investment) => void;
 } | null>(null);
-
-interface Investment {
-  id: number;
-  fund: string;
-  amount: number;
-}
 
 const Dashboards = () => {
   const [investments, setInvestments] = useState<Investment[]>([]);

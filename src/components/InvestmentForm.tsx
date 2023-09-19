@@ -3,15 +3,7 @@ import FundSelection from "./FundSelection";
 import InvestmentAmount from "./InvestmentAmount";
 import { currencySmybols } from "../common/helpers";
 
-interface InvestmentFormProps {
-  onSubmit: (investment: Investment) => void;
-}
-
-interface Investment {
-  id: number;
-  fund: string;
-  amount: number;
-}
+import { InvestmentFormProps, Investment } from "../common/types";
 
 const InvestmentForm = ({ onSubmit }: InvestmentFormProps): JSX.Element => {
   const [step, setStep] = useState<number>(1);

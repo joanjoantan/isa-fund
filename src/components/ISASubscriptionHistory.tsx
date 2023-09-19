@@ -10,10 +10,7 @@ import React from "react";
 import { currencySmybols, createData } from "../common/helpers";
 import Popover from "@mui/material/Popover";
 
-interface ISAAmountProps {
-  remainingAllowance: number;
-  initialAmount: number;
-}
+import { ISAAmountProps } from "../common/types";
 
 const rowsISASubscriptionHistory = [
   createData("2023-2024", "£20,000.00 ", "£19,000.00", "£1,000.00"),

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-interface FundSelectionProps {
-  onSelectFund: (fund: string) => void;
-}
+import { FundSelectionProps } from "../common/types";
 
 const FundSelection = ({ onSelectFund }: FundSelectionProps): JSX.Element => {
   const [selectedFund, setSelectedFund] = useState<string>("");
