@@ -7,7 +7,9 @@ To solve this scenario, we can design a simple system for managing customers' Cu
 User Interface: Create a user interface that allows customers to perform the following actions:
 
 Select a single fund for investment.
+
 Input the amount they want to invest.
+
 Submit the investment request.
 
 # 2. Future Enhancements (Not Covered in the Solution):
