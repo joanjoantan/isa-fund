@@ -11,7 +11,7 @@ interface InvestmentListProps {
   investments: Investment[];
 }
 
-const InvestmentList: React.FC<InvestmentListProps> = ({ investments }) => {
+const InvestmentList = ({ investments }: InvestmentListProps): JSX.Element => {
   const initialAmount = 25000;
   const [remainingAllowance, setRemainingAllowance] = useState(initialAmount);
 

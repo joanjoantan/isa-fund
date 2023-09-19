@@ -5,10 +5,10 @@ interface InvestmentAmountProps {
   previousInvestmentAmount: number;
 }
 
-const InvestmentAmount: React.FC<InvestmentAmountProps> = ({
+const InvestmentAmount = ({
   onConfirmAmount,
   previousInvestmentAmount,
-}) => {
+}: InvestmentAmountProps): JSX.Element => {
   const [amount, setAmount] = useState<number>(0);
   const [errorMessage, setErrorMessage] = useState("");
 

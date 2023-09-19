@@ -22,10 +22,10 @@ const rowsISASubscriptionHistory = [
   createData("2020-2021", "£20,000.00 ", "£4,000.00", "£16,000.00"),
 ];
 
-const ISASubscriptionHistory: React.FC<ISAAmountProps> = ({
+const ISASubscriptionHistory = ({
   remainingAllowance,
   initialAmount,
-}) => {
+}: ISAAmountProps): JSX.Element => {
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
     null
   );

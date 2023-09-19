@@ -6,7 +6,7 @@ import "./App.css";
 
 const Dashboards = lazy(() => import("./pages/Investment"));
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Router>

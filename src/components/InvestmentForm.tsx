@@ -13,7 +13,7 @@ interface Investment {
   amount: number;
 }
 
-const InvestmentForm: React.FC<InvestmentFormProps> = ({ onSubmit }) => {
+const InvestmentForm = ({ onSubmit }: InvestmentFormProps): JSX.Element => {
   const [step, setStep] = useState<number>(1);
   const [totalInvestmentAmount, setTotalInvestmentAmount] = useState<number>(0);
 

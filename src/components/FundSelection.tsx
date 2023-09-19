@@ -4,7 +4,7 @@ interface FundSelectionProps {
   onSelectFund: (fund: string) => void;
 }
 
-const FundSelection: React.FC<FundSelectionProps> = ({ onSelectFund }) => {
+const FundSelection = ({ onSelectFund }: FundSelectionProps): JSX.Element => {
   const [selectedFund, setSelectedFund] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState("");
 
