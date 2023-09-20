@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
 import { Investment } from "../common/types";
 
@@ -30,7 +30,10 @@ const Dashboards = () => {
 
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <InvestmentForm onSubmit={handleInvestmentSubmit} />
+          {/* <InvestmentForm onSubmit={handleInvestmentSubmit} /> */}
+          <InvestmentForm
+            onSubmit={(investment) => addInvestment(investment)}
+          />
         </Grid>
 
         <Grid item xs={12}>

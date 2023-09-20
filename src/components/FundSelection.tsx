@@ -13,10 +13,10 @@ const FundSelection = ({ onSelectFund }: FundSelectionProps): JSX.Element => {
 
   const handleSelectFund = () => {
     if (selectedFund.length > 0) {
-      onSelectFund(selectedFund);
-    } else {
-      setErrorMessage("Please select a valid fund.");
+      return onSelectFund(selectedFund);
     }
+
+    return setErrorMessage("Please select a valid fund.");
   };
 
   return (

@@ -20,18 +20,22 @@ const InvestmentAmount = ({
 
   const handleConfirmClick = () => {
     if (amount === 0) {
-      setErrorMessage("Please enter an amount.");
-    } else {
-      const totalAmount = previousInvestmentAmount + amount;
-
-      if (Number(totalAmount) > 25000) {
-        setErrorMessage("Total investment amount cannot exceed £25,000.");
-      } else {
-        onConfirmAmount(amount);
-        setAmount(0);
-        setErrorMessage("");
-      }
+      return setErrorMessage("Please enter an amount.");
     }
+
+    const totalAmount = previousInvestmentAmount + amount;
+
+    if (Number(totalAmount) > 25000) {
+      return setErrorMessage("Total investment amount cannot exceed £25,000.");
+    }
+
+    confirmAmount();
+  };
+
+  const confirmAmount = () => {
+    onConfirmAmount(amount);
+    setAmount(0);
+    setErrorMessage("");
   };
 
   return (
